@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+  <style >
+   :root{
+    --color-1: #2f3240;
+}
+
+*{
+   box-sizing: border-box;
+   margin:0;
+   padding:0;
+}
+ul{
+   list-style: none;
+}
+a{
+   text-decoration: none;
+}
+.header_container{
+   max-width: 1170px;
+   margin:auto;
+}
+.row{
+   display: flex;
+   flex-wrap: wrap;
+}
+.align-items-center{
+   align-items: center;
+}
+.justify-content-between{
+   justify-content: space-between;
+}
+/*header*/
+.header{
+   background-color: #B0E0E6;
+   padding: 12px 0;
+   line-height: 1.5;
+}
+
+.header .header_logo,
+.header .nav{
+   padding:0 15px;
+}
+.header .header_logo a{
+   font-size: 30px;
+   color: #ffffff;
+   text-transform: capitalize;
+}
+.header .nav ul li{
+   display: inline-block;
+   margin-left: 40px;
+}
+.header .nav ul li a{
+   display: block;
+   font-size: 16px;
+   text-transform: capitalize;
+   color: #ffffff;
+   padding: 10px 0;
+   transition: all 0.5s ease;
+}
+.header .nav ul li a.active,
+.header .nav ul li a:hover{
+   color: black;
+}
+.nav-toggler{
+   height: 34px;
+   width: 44px;
+   background-color: #ffffff;
+   border-radius: 4px;
+   cursor: pointer;
+   border:none;
+   display: none;
+   margin-right: 15px;
+}
+.nav-toggler:focus{
+   outline: none;
+   box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+.nav-toggler span{
+    height: 2px;
+    width: 20px;
+    background-color: var(--color-1);
+    display: block;
+    margin:auto;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.nav-toggler.active span{
+   background-color: transparent;
+}
+.nav-toggler span::before,
+.nav-toggler span::after{
+   content: '';
+   position: absolute;
+   left:0;
+   top:0;
+   width: 100%;
+   height: 100%;
+   background-color: var(--color-1);
+   transition: all 0.3s ease;
+}
+.nav-toggler span::before{
+   transform: translateY(-6px);
+}
+.nav-toggler.active span::before{
+   transform: rotate(45deg);
+}
+.nav-toggler span::after{
+   transform: translateY(6px);
+}
+.nav-toggler.active span::after{
+   transform: rotate(135deg);
+}
+@media(max-width:991px){
+   .nav-toggler{
+      display: block;
+   }
+   .header .nav{
+      width: 100%;
+      padding:0;
+      max-height: 0px;
+      overflow: hidden;
+      visibility: hidden;
+      transition: all 0.5s ease;
+   }
+   .header .nav.open{
+      visibility: visible;
+   }
+   .header .nav ul{
+      padding:12px 15px 0;
+      margin-top: 12px;
+      border-top:1px solid rgba(255,255,255,0.2);
+   }
+   .header .nav ul li{
+      display: block;
+      margin:0;
+   }
+}
+
+
+
+  </style>
+
+</head>
+<body>
+  
+  
+
+
+ <header class="header">
+    <div class="header_container">
+        <div class="row align-items-center justify-content-between">
+            <div class="header_logo">
+               <a href="profile.php">logo</a>
+            </div>
+            <button type="button" class="nav-toggler">
+               <span></span>
+            </button>
+            <nav class="nav">
+               <ul>
+                  <li><a href="profile.php">home</a></li>
+                  <li><a href="why_stout.html">Why stout</a></li>
+                  <li><a href="companies.html">Companies</a></li>
+                  <li><a href="candidates.html">Candidates</a></li>
+                  <li><a href="testimonials.html"class="active">Testimonials</a></li>
+                  <li><a href="vendorviewblog.html">Vendor Views Blog</a></li>
+                   <li><a href="news.html">News</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                   <li><a href="index.php">logout</a></li>
+
+  
+  
+               </ul>
+            </nav>
+        </div>
+    </div>
+ </header>
+<div class="top_icon1">
+  <div class="image">
+  <img src="1.jpg" style="margin-left: 60px;" >
+</div></div>
+<div class="top_icon">
+  <div class="image">
+  <img src="2.jpg" class="img2"style="margin-left: 10px;">
+  <img src="3.jpg" style="margin-left: 10px;">
+<img src="4.jpg" style="margin-left: 10px;">
+</div></div>
+
+
+
+<div class="image_slide">
+  <img class="mySlides" src="6.jpg"  style="width:100%; height: 300px;">
+  <img class="mySlides" src="7.jpg" style="width:100%; height: 300px;">
+    <img class="mySlides" src="8.jpg" style="width:100%; height: 300px;">
+
+</div></div></nav>
+<br><br><br>
+
+
+<div class="quote"><hr><br><p> <i class="fa fa-quote-left" style="font-size:48px;color:red"></i>
+"I really cannot say enough good things about Stout Executive Search. I wasn't really looking for a new role, but Jacob reached out to me to setup a profile and to get to know me. After learning more about my experience, he floated a role my way that I listened to. Before I knew it, I had landed an amazing role for a company that really cares for their employees. Jacob helped me throughout the interview process, and was excellent in communicating with me and touching base. If you are looking to expand your network, this search team is the one to do it!" </p><br><br>
+ <span>
+-Eric, National Account Manager </span><br> <br><hr>
+
+
+
+<br><br>
+
+
+<p><i class="fa fa-quote-left" style="font-size:48px;color:red"></i>
+"I had a wonderful experience with Marvelyn and her team at Stout Executive Search. I wasn’t proactively looking for a new role but talked with Marvelyn and was impressed by how she took the time to listen and understand my background and interests. Their process is much deeper and more holistic in order to truly understand what it is each candidate is looking for. Jacob was a great resource throughout the process and brought forward an opportunity a week after our first conversation, which I ended up interviewing for and accepting a few weeks later. I felt like they were there for me the entire time, and even followed up after I started to see how I was doing. If you’re even open to exploring what’s available, I highly recommend talking with Stout Executive Search!" </p><br><br>
+ <span>
+-Melissa, Manager Insights & Strategy </span><br> <br><hr>
+
+
+<br><br>
+
+<p><i class="fa fa-quote-left" style="font-size:48px;color:red"></i>
+"My experience with Stout is fantastic. From the initial onboarding to post job acquisition follow up, Stout was with me every step of the way providing practical insights to help present myself in the most beneficial way to prospective employers. Great job: check!" 
+</p><br><br>
+ <span>
+-Jay, National Account Manager </span><br> <br><hr>
+
+
+<p><i class="fa fa-quote-left" style="font-size:48px;color:red"></i>
+"Stout Executive Search was absolutely instrumental in helping me land my dream job. I felt stuck in my previous position, and they found me at the right place and time to where I’m currently thriving with even more room to grow." </p><br><br>
+ <span>
+-Sam, Category Analyst </span><br> <br><hr>
+
+<br><br>
+
+<p><i class="fa fa-quote-left" style="font-size:48px;color:red"></i>
+"I have worked with Marvelyn Stout and her team for over 5 years. They provide a personal and professional approach to recruitment and guide candidates through the process with ease. I would recommend them to anyone within the Walmart supplier community that is looking for the next step in their career or searching for talent to grow their team. They recently helped me transition to a new company and were there to guide and answer questions along the way." </p><br><br>
+ <span>
+-Aaron, Category Leadership Manager </span><br> <br><hr>
+
+
+<br><br>
+
+
+<p><i class="fa fa-quote-left" style="font-size:48px;color:red"></i>
+"Stout was great, always available to answer questions and interested in the person and placement more than the company." "I loved working with Stout Executive! They were very helpful and communicative throughout the process. Thanks so much for helping me find a great role!"</p><br><br>
+ <span>
+-Matt, Sales/ Replenishment Manager </span><br> <br><hr>
+
+
+<br><br>
+<p><i class="fa fa-quote-left" style="font-size:48px;color:red"></i>
+"The team identified the right company for me and was able to land me the interview. Greatly appreciative of their work." </p><br><br>
+ <span>
+-Don, Category Lead </span>
+<br> <br><hr>
+<br><br>
+
+<p><i class="fa fa-quote-left" style="font-size:48px;color:red"></i>
+
+"I recently had the pleasure of working with the Stout Executive Search team, and I could not be more pleased with my results! Marvelyn is top notch in her field, as well as the rest of her staff including Shannon, Jacob, Kari, and Brenda! They take the time to really understand what you’re looking for and they make sure the opportunities they present are a fit for you. They truly care about their clients and go the extra mile. I have continued to be impressed with their services, from the beginning stages of going through the process and even afterwards as well, as they still check in. They helped to change my life and I will be forever grateful! Thank you, Stout Executive Search!" </p><br><br>
+ <span>
+-Amy, Senior Category Manager </span><br> <br><hr>
+
+<p><i class="fa fa-quote-left" style="font-size:48px;color:red"></i>
+"Marvelyn & the Stout team are a pleasure to work with. Very professional, prompt on follow ups and guided me throughout every step in the process. The interpersonal connection and relationship are unmatched. I highly recommend this group!" </p><br><br>
+ <span>
+-Trevor, National Account Manager</span><br> <br><hr>
+
+
+
+<p><i class="fa fa-quote-left" style="font-size:48px;color:red"></i>
+"Stout Executive Search is an excellent recruiter! I was not initially looking for a new job but within a month the Stout team helped me land a dream job - with a better company culture, higher pay, more opportunities, and sincerely helped me progress towards my career goals. The Stout team supported me through every step of the selection, placement, interview, and onboarding process. Thanks Stout Executive Search for the opportunity and incredible candidate support from your fantastic team. From corporate culture to compensation to career goals, they listened and placed me quickly without being pushy or exacting. Thank you!"</p><br><br>
+ <span>
+-Jared, Senior CPFR Analyst  </span><br> <br><hr>
+
+
+<p><i class="fa fa-quote-left" style="font-size:48px;color:red"></i>
+"The Stout Executive Search Team delivered a great experience from start to finish. Jacob and Marvelyn always made cultural fit and professional growth a cornerstone for the opportunities discussed. I felt extremely supported throughout the process and highly recommend them." </p><br><br>
+ <span>
+-Bailee, Senior Customer Manager </span><br> <br><hr>
+
+
+
+<p><i class="fa fa-quote-left" style="font-size:48px;color:red"></i>"What a great group of people. From the day they first reached out to me to check-in’s after I accepted my new role the group at Stout have been continuously professional, kind, and supportive. I am grateful for them and would highly recommend them if you are a CPG professional in the area." </p><br><br>
+ <span>
+- Ben, Key Account Manager Ecommerce </span><br> <br><hr>
+
+
+
+<p><i class="fa fa-quote-left" style="font-size:48px;color:red"></i>"Stout Executive was excellent and easy to work with. They helped me from the beginning and follow through with every step of the interview process and very attentive communication throughout. I highly recommend using Stout Executive Search."  </p><br><br>
+ <span>
+- Benny, Key Account Manager </span><br> <br><hr>
+
+<p><i class="fa fa-quote-left" style="font-size:48px;color:red"></i>
+"Great experience working with the team. Full understanding of professional roles and career progression. Communication was flawless during the process, things moved very quickly and I am very happy in my new position. Highly recommend!"  </p><br><br>
+ <span>
+- Stefanie, Customer Category Manager </span><br> <br><hr>
+
+
+
+<p><i class="fa fa-quote-left" style="font-size:48px;color:red"></i>
+"I have worked with Stout Executives over the past several years and I really appreciate the fact that Marvelyn and her team take a personal approach in identifying and placing candidates! They take the extra step to ensure both candidate and company are the right match for each other!"   </p><br><br>
+ <span>
+- Stephanie, Category Advisor
+ </span>
+<br> <br><hr>
+
+
+<p><i class="fa fa-quote-left" style="font-size:48px;color:red"></i>
+"Loved working with Stout. They were able to match my needs professionally and culturally. The team gave me strong support and resources as I made my decision to embark on a new journey."  </p><br><br>
+ <span>
+- Genevieve, Trade Marketing Manager </span><br> <br><hr>
+
+<p><i class="fa fa-quote-left" style="font-size:48px;color:red"></i>
+
+"I'm so grateful to have worked with Marvelyn and the total Stout Team. They took time to get to know me personally over multiple meetings and leveraged their knowledge to place me in an elevated role that fit both my career asperations and organizational culture preferences. Working with Stout was the best recruiter experience of my career."  </p><br><br>
+ <span>
+- Kyle, Sales Team Lead </span><br> <br><hr>
+
+
+
+<p><i class="fa fa-quote-left" style="font-size:48px;color:red"></i>
+"The team at Stout Executive Search left no stone unturned when working to connect me with the right vendor. The time they took to get to know me personally and professionally displayed their attention to detail, dedication, and drive that made our alliance a success."  </p><br><br>
+ <span>
+-Meredith, Senior CPFR Analyst </span><br> <br><hr>
+
+<p><i class="fa fa-quote-left" style="font-size:48px;color:red"></i>
+"I am so glad to have connected with the team at Stout Executive Search. Marvelyn took the time to get to know me, my professional desires and I was placed with a company that has been an excellent fit."  </p><br><br>
+ <span>
+-Mandy, Sales Director </span><br> <br><hr>
+
+</div>
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+<footer>
+   <div class="article">
+     <div class="left box">
+       <div class="upper">
+         <div class="topic">About us</div>
+         <p>Our understanding of the jobs in the market ensures you are placed in a position to reach your full potential.</p>
+       </div>
+       <div class="lower">
+         <div class="topic">Contact us</div>
+         <div class="phone">
+           <a href="tel:+4733378901"><i class="fa fa-phone"></i>+007 9898 015</a>
+         </div>
+         <div class="email">
+           <a href="mailto:someone@example.com"><i class="fa fa-envelope"></i>yourgmaailname@gmail.com</a>
+         </div>
+       </div>
+     </div>
+     <div class="middle box">
+       <div class="topic">Our Services</div>
+       <div><a href="profile.php">HOME</a></div>
+       <div><a href="why_stout.html">WHY STOUT</a></div>
+       <div><a href="companies.html">COMPANIES</a></div>
+       <div><a href="candidates.html">CANDIDATES</a></div>
+       <div><a href="testimonials.html">TESTIMONIALS</a></div>
+       <div><a href="vendorviewblog.html">Vendor Views BLOG</a></div>
+       <div><a href="news.html">NEWS</a></div>
+     </div>
+     <div class="right box">
+       <div class="topic">Subscribe us</div>
+       <form action="#" style="width: 90%;">
+         <input type="text" placeholder="Enter Your email address">
+         <input type="submit" name="" value="Send">
+         <div class="media-icons">
+           <a href="https://www.facebook.com/StoutExecutiveSearch/" target="_blank"><i class="fa fa-facebook-f"></i></a>
+           <a href="https://www.instagram.com/StoutSearch/?__coig_restricted=1" target="_blank"><i class="fa fa-instagram"></i></a>
+           <a href="https://twitter.com/stoutsearch" target="_blank"><i class="fa fa-twitter"></i></a>
+           <a href="https://www.linkedin.com/company/2291440" target="_blank"><i class="fa fa-linkedin"></i></a>
+         </div>
+       </form>
+     </div>
+   </div>
+   <div class="bottom">
+     <p>Copyright © 2022 <a href="why_stout.html">WHY STOUT</a> All rights reserved</p>
+   </div>
+ </footer>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $('.toggle i').click(function (){
+    $('ul').toggleClass('show')
+  });
+</script>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+<script >
+
+ const navToggler = document.querySelector(".nav-toggler");
+ navToggler.addEventListener("click", navToggle);
+
+ function navToggle() {
+    navToggler.classList.toggle("active");
+    const nav = document.querySelector(".nav");
+    nav.classList.toggle("open");
+    if(nav.classList.contains("open")){
+      nav.style.maxHeight = nav.scrollHeight + "px";
+    }
+    else{
+      nav.removeAttribute("style");
+    }
+ } </script>
+</body>
+</html> 

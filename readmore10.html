@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+  <style >
+   :root{
+    --color-1: #2f3240;
+}
+
+*{
+   box-sizing: border-box;
+   margin:0;
+   padding:0;
+}
+ul{
+   list-style: none;
+}
+a{
+   text-decoration: none;
+}
+.header_container{
+   max-width: 1170px;
+   margin:auto;
+}
+.row{
+   display: flex;
+   flex-wrap: wrap;
+}
+.align-items-center{
+   align-items: center;
+}
+.justify-content-between{
+   justify-content: space-between;
+}
+/*header*/
+.header{
+   background-color: #B0E0E6;
+   padding: 12px 0;
+   line-height: 1.5;
+}
+
+.header .header_logo,
+.header .nav{
+   padding:0 15px;
+}
+.header .header_logo a{
+   font-size: 30px;
+   color: #ffffff;
+   text-transform: capitalize;
+}
+.header .nav ul li{
+   display: inline-block;
+   margin-left: 40px;
+}
+.header .nav ul li a{
+   display: block;
+   font-size: 16px;
+   text-transform: capitalize;
+   color: #ffffff;
+   padding: 10px 0;
+   transition: all 0.5s ease;
+}
+.header .nav ul li a.active,
+.header .nav ul li a:hover{
+   color: black;
+}
+.nav-toggler{
+   height: 34px;
+   width: 44px;
+   background-color: #ffffff;
+   border-radius: 4px;
+   cursor: pointer;
+   border:none;
+   display: none;
+   margin-right: 15px;
+}
+.nav-toggler:focus{
+   outline: none;
+   box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+.nav-toggler span{
+    height: 2px;
+    width: 20px;
+    background-color: var(--color-1);
+    display: block;
+    margin:auto;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.nav-toggler.active span{
+   background-color: transparent;
+}
+.nav-toggler span::before,
+.nav-toggler span::after{
+   content: '';
+   position: absolute;
+   left:0;
+   top:0;
+   width: 100%;
+   height: 100%;
+   background-color: var(--color-1);
+   transition: all 0.3s ease;
+}
+.nav-toggler span::before{
+   transform: translateY(-6px);
+}
+.nav-toggler.active span::before{
+   transform: rotate(45deg);
+}
+.nav-toggler span::after{
+   transform: translateY(6px);
+}
+.nav-toggler.active span::after{
+   transform: rotate(135deg);
+}
+@media(max-width:991px){
+   .nav-toggler{
+      display: block;
+   }
+   .header .nav{
+      width: 100%;
+      padding:0;
+      max-height: 0px;
+      overflow: hidden;
+      visibility: hidden;
+      transition: all 0.5s ease;
+   }
+   .header .nav.open{
+      visibility: visible;
+   }
+   .header .nav ul{
+      padding:12px 15px 0;
+      margin-top: 12px;
+      border-top:1px solid rgba(255,255,255,0.2);
+   }
+   .header .nav ul li{
+      display: block;
+      margin:0;
+   }
+}
+
+
+
+  </style>
+
+</head>
+<body>
+  
+  
+
+
+ <header class="header">
+    <div class="header_container">
+        <div class="row align-items-center justify-content-between">
+            <div class="header_logo">
+               <a href="profile.php">logo</a>
+            </div>
+            <button type="button" class="nav-toggler">
+               <span></span>
+            </button>
+            <nav class="nav">
+               <ul>
+                  <li><a href="profile.php" class="active">home</a></li>
+                  <li><a href="why_stout.html">Why stout</a></li>
+                  <li><a href="companies.html">Companies</a></li>
+                  <li><a href="candidates.html">Candidates</a></li>
+                  <li><a href="testimonials.html">Testimonials</a></li>
+                  <li><a href="vendorviewblog.html">Vendor Views Blog</a></li>
+                   <li><a href="news.html">News</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                   <li><a href="index.php">logout</a></li>
+
+  
+  
+               </ul>
+            </nav>
+        </div>
+    </div>
+ </header>
+<div class="top_icon1">
+  <div class="image">
+  <img src="1.jpg" style="margin-left: 60px;">
+  </div>
+</div>
+<div class="top_icon">
+  <div class="image">
+  <img src="2.jpg" class="img2"style="margin-left: 10px;">
+  <img src="3.jpg" style="margin-left: 10px;">
+  <img src="4.jpg" style="margin-left: 10px;">
+  </div>
+</div>
+
+
+
+<div class="image_slide">
+  <img class="mySlides" src="35.jpg"  style="width:100%; height: 300px;" >
+  <img class="mySlides" src="36.jpg" style="width:100%; height: 300px;">
+  <img class="mySlides" src="8.jpg" style="width:100%; height: 300px;">
+    <img class="mySlides" src="7.jpg" style="width:100%; height: 300px;">
+
+</div>
+<br><br><br>
+
+<div class="news_para"><a href="why_stout.html">
+  <h3>
+New Business Spotlight: Stout Executive Search
+  </h3></a><br>
+  <p>BY SUE MORRIS  
+
+<br><a href="https://www.arkansasonline.com/" target="_blank"><span style="color:red;"> ARKANSAS DEMOCRAT-GAZETTE</span> 6/1</a>
+
+
+</p><br><br>
+  <p>SPRINGDALE — When Marvelyn Stout worked for a WalMart supplier, she used recruiters to help build her team. However, she saw there was a need for another approach in recruitment for the WalMart supplier community and thought she could provide what was needed when she decided to start a new business.
+
+  </p><br>
+</div>
+<img src="33.jpg" style="margin-left:5%; width:200px;">
+
+<div class="new_para">
+  
+  <p>“We are committed about getting to know each of our candidates and our clients — one at a time. This business is about building relationships,” said Stout, 45. She owns Stout Executive Search, which opened in November.
+ </p><br>
+</div><div class="new_para">
+  
+  <p>She sees the firm’s focus as connecting the best and the brightest among executive candidates and companies in the consumer goods industry that currently sell to WalMart Stores Inc. and Sam’s Clubs.
+ </p><br>
+</div>
+<div class="new_para">
+  
+  <p>
+Stout Executive Search is looking for the toptier talent currently selling to the world’s largest retailer. Positions might include vice president, team leaders, national account managers, category advisers, category managers, consumer insights, sales analysts, and supply chain and replenishment managers.
+
+
+</div>
+<div class="new_para">
+  
+  <p>
+“Most of the WalMart suppliers in this community do require previous supplier experience or are not willing to use a recruiter for this type of candidate,” Stout said.
+
+
+
+
+</div>
+
+
+
+<div class="new_para">
+  
+  <p>
+That practice leads to a policy at Stout Executive Search: Candidates must be currently working for a WalMart supplier to seek services from the firm. Candidates can email their resumes to resumes@stoutexecutivesearch.com. Fees are later paid by the employer once the candidate has been engaged.
+
+
+
+
+  </p><br>
+</div>
+<div class="new_para">
+  
+  <p>
+Stout or a staff member first sets an appointment to talk with the candidates in the attractive office overlooking the fountains at HarBer Meadows. The staff of four can input keywords describing each candidate’s experience and background into the computer database to link their particular strengths with the needs of the companies. That specialized computer software was the most expensive element of the firm’s November startup, but it allows special attention to individual needs.
+
+
+
+
+
+  </p><br>
+</div>
+<div class="new_para">
+  
+  <p>
+“They sell us on selling them,” Stout said of the initial candidate interviews.<br>
+
+Stout Executive Search must get specific permission for a particular position and company before sending out a candidate’s resume. That’s one of the 
+<br>practices that leads to the firm’s assurance: “Your placement. Our passion.”<br>
+
+The face-to-face relationships developed with candidates and companies establish a true fit that is right for both, Stout said.
+
+
+
+
+  </p><br>
+</div>
+<div class="new_para">
+  
+  <p>
+Her own background gives her particular insights on those supplier companies and their employment needs. Stout has 18 years’ experience in sales and marketing, including 10 years as a brand manager with the Kimberly-Clark Corp. She also served as the Walmart Team Leader for the largest private label U.S. pet food, manufactured by Mars, Inc.
+
+
+
+  </p><br>
+</div>
+<div class="new_para">
+  
+  <p>
+“When you call on WalMart, you learn to appreciate the WalMart culture and this firm is strongly influenced by that culture,” Stout said.<br>
+
+For anyone without supplier experience on his resume, she recommends the marketing analyst program at Northwest Arkansas Community College in<br> Bentonville as preparation for work as a category manager.
+<br>
+“This is a great place to start. The candidates also must be willing to get out there and knock on doors to find their first position with a<br> supplier,” said Stout, the first woman to lead an executive search firm in Northwest Arkansas.
+
+
+  </p><br>
+</div>
+<div class="new_para">
+  
+  <p>
+“Everybody wants to get into the WalMart supplier community, but you have to earn your position there,” Stout said. “The skill set of the traditional salesperson is not enough anymore. Now they need higherlevel analytics, strategic thinking and a mastery of consumer insights.”
+
+
+
+
+  </p><br>
+</div>
+<div class="new_para">
+  
+  <p>
+If you recently opened a business or know of a new business in the area, please call Sue Morris at (479) 7708468 or email: smorris@arkansasonline.com
+
+
+  </p><br>
+</div>
+<div class="new_para">
+  
+  <p>
+DETAILS LOCATION: 6878 Isaacs Orchard Road, Suite E (HarBer Meadows), Springdale<br>
+PHONE: (479) 3611114; fax (479) 3611125<br><a href="why_stout.html">
+WEB SITE: www.stoutexecutivesearch.com </a><br>
+OWNER: Marvelyn Stout<br>
+PRODUCTS/SERVICES: Executive placement HOURS: 8 a.m.5 p.m. weekdays or by arrangement<br>
+START DATE: November 2006<br>
+STARTUP COSTS: Would not disclose<br>
+FUNDING: Would not disclose<br>
+
+  </p><br>
+</div>
+<div class="first_but">   
+  <a href="readmore8.html">
+  <button>previous</button></a>
+  <a href="readmore9.html">
+  <button>next</button></a>
+</div>
+<br><br><br>
+
+
+
+
+
+
+
+<footer>
+   <div class="article">
+     <div class="left box">
+       <div class="upper">
+         <div class="topic">About us</div>
+         <p>Our understanding of the jobs in the market ensures you are placed in a position to reach your full potential.</p>
+       </div>
+       <div class="lower">
+         <div class="topic">Contact us</div>
+         <div class="phone">
+           <a href="tel:+4733378901"><i class="fa fa-phone"></i>+007 9898 015</a>
+         </div>
+         <div class="email">
+           <a href="mailto:someone@example.com"><i class="fa fa-envelope"></i>yourgmaailname@gmail.com</a>
+         </div>
+       </div>
+     </div>
+     <div class="middle box">
+       <div class="topic">Our Services</div>
+       <div><a href="profile.php">HOME</a></div>
+       <div><a href="why_stout.html">WHY STOUT</a></div>
+       <div><a href="companies.html">COMPANIES</a></div>
+       <div><a href="candidates.html">CANDIDATES</a></div>
+       <div><a href="testimonials.html">TESTIMONIALS</a></div>
+       <div><a href="vendorviewblog.html">Vendor Views BLOG</a></div>
+       <div><a href="news.html">NEWS</a></div>
+     </div>
+     <div class="right box">
+       <div class="topic">Subscribe us</div>
+       <form action="#" style="width: 90%;">
+         <input type="text" placeholder="Enter Your email address">
+         <input type="submit" name="" value="Send">
+         <div class="media-icons">
+           <a href="https://www.facebook.com/StoutExecutiveSearch/" target="_blank"><i class="fa fa-facebook-f"></i></a>
+           <a href="https://www.instagram.com/StoutSearch/?__coig_restricted=1" target="_blank"><i class="fa fa-instagram"></i></a>
+           <a href="https://twitter.com/stoutsearch" target="_blank"><i class="fa fa-twitter"></i></a>
+           <a href="https://www.linkedin.com/company/2291440" target="_blank"><i class="fa fa-linkedin"></i></a>
+         </div>
+       </form>
+     </div>
+   </div>
+   <div class="bottom">
+     <p>Copyright © 2022 <a href="why_stout.html">WHY STOUT</a> All rights reserved</p>
+   </div>
+ </footer>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $('.toggle i').click(function (){
+    $('ul').toggleClass('show')
+  });
+</script>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+<script >
+
+ const navToggler = document.querySelector(".nav-toggler");
+ navToggler.addEventListener("click", navToggle);
+
+ function navToggle() {
+    navToggler.classList.toggle("active");
+    const nav = document.querySelector(".nav");
+    nav.classList.toggle("open");
+    if(nav.classList.contains("open")){
+      nav.style.maxHeight = nav.scrollHeight + "px";
+    }
+    else{
+      nav.removeAttribute("style");
+    }
+ } </script>
+</body>
+</html> 
+
+

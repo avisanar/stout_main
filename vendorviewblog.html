@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+
+  <style >
+   :root{
+    --color-1: #2f3240;
+}
+
+*{
+   box-sizing: border-box;
+   margin:0;
+   padding:0;
+}
+ul{
+   list-style: none;
+}
+a{
+   text-decoration: none;
+}
+.header_container{
+   max-width: 1170px;
+   margin:auto;
+}
+.row{
+   display: flex;
+   flex-wrap: wrap;
+}
+.align-items-center{
+   align-items: center;
+}
+.justify-content-between{
+   justify-content: space-between;
+}
+/*header*/
+.header{
+   background-color: #B0E0E6;
+   padding: 12px 0;
+   line-height: 1.5;
+}
+
+.header .header_logo,
+.header .nav{
+   padding:0 15px;
+}
+.header .header_logo a{
+   font-size: 30px;
+   color: #ffffff;
+   text-transform: capitalize;
+}
+.header .nav ul li{
+   display: inline-block;
+   margin-left: 40px;
+}
+.header .nav ul li a{
+   display: block;
+   font-size: 16px;
+   text-transform: capitalize;
+   color: #ffffff;
+   padding: 10px 0;
+   transition: all 0.5s ease;
+}
+.header .nav ul li a.active,
+.header .nav ul li a:hover{
+   color: black;
+}
+.nav-toggler{
+   height: 34px;
+   width: 44px;
+   background-color: #ffffff;
+   border-radius: 4px;
+   cursor: pointer;
+   border:none;
+   display: none;
+   margin-right: 15px;
+}
+.nav-toggler:focus{
+   outline: none;
+   box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+.nav-toggler span{
+    height: 2px;
+    width: 20px;
+    background-color: var(--color-1);
+    display: block;
+    margin:auto;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.nav-toggler.active span{
+   background-color: transparent;
+}
+.nav-toggler span::before,
+.nav-toggler span::after{
+   content: '';
+   position: absolute;
+   left:0;
+   top:0;
+   width: 100%;
+   height: 100%;
+   background-color: var(--color-1);
+   transition: all 0.3s ease;
+}
+.nav-toggler span::before{
+   transform: translateY(-6px);
+}
+.nav-toggler.active span::before{
+   transform: rotate(45deg);
+}
+.nav-toggler span::after{
+   transform: translateY(6px);
+}
+.nav-toggler.active span::after{
+   transform: rotate(135deg);
+}
+@media(max-width:991px){
+   .nav-toggler{
+      display: block;
+   }
+   .header .nav{
+      width: 100%;
+      padding:0;
+      max-height: 0px;
+      overflow: hidden;
+      visibility: hidden;
+      transition: all 0.5s ease;
+   }
+   .header .nav.open{
+      visibility: visible;
+   }
+   .header .nav ul{
+      padding:12px 15px 0;
+      margin-top: 12px;
+      border-top:1px solid rgba(255,255,255,0.2);
+   }
+   .header .nav ul li{
+      display: block;
+      margin:0;
+   }
+}
+
+
+
+  </style>
+
+</head>
+<body>
+  
+  
+
+
+ <header class="header">
+    <div class="header_container">
+        <div class="row align-items-center justify-content-between">
+            <div class="header_logo">
+               <a href="profile.php">logo</a>
+            </div>
+            <button type="button" class="nav-toggler">
+               <span></span>
+            </button>
+            <nav class="nav">
+               <ul>
+                  <li><a href="profile.php" >home</a></li>
+                  <li><a href="why_stout.html">Why stout</a></li>
+                  <li><a href="companies.html">Companies</a></li>
+                  <li><a href="candidates.html">Candidates</a></li>
+                  <li><a href="testimonials.html">Testimonials</a></li>
+                  <li><a href="vendorviewblog.html" class="active">Vendor Views Blog</a></li>
+                   <li><a href="news.html">News</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                   <li><a href="index.php">logout</a></li>
+
+  
+  
+               </ul>
+            </nav>
+        </div>
+    </div>
+ </header>
+<div class="top_icon1">
+  <div class="image">
+  <img src="1.jpg" style="margin-left: 60px;">
+</div></div>
+<div class="top_icon">
+  <div class="image">
+  <img src="2.jpg" class="img2"style="margin-left: 10px;">
+  <img src="3.jpg" style="margin-left: 10px;">
+<img src="4.jpg" style="margin-left: 10px;">
+</div></div>
+
+
+
+<div class="image_slide">
+  <img class="mySlides" src="6.jpg"  style="width:100%; height: 300px;">
+  <img class="mySlides" src="35.jpg" style="width:100%; height: 300px;">
+    <img class="mySlides" src="8.jpg" style="width:100%; height: 300px;">
+      <img class="mySlides" src="36.jpg" style="width:100%; height:300px;">
+
+
+</div></div></nav>
+<br><br><br>
+
+
+
+
+<div class="loading">
+
+   <img src="28.jpg " style="width:500px; ">
+
+   <div class="box-loading">
+
+      <div class="box">
+         <div class="image_loading">
+            <img src="10.jpg" alt="">
+         </div>
+         <div class="content_loading">
+            <h3>Pausing a Few Moments for Reflection – Regina Bailey, Menasha Packaging, Sr. Director of Retail Strategy (3 min read)</h3>
+            <p>We have reached the time of year when wondering where 2022 went is on everyone’s mind. As we approach the holidays, it certainly becomes a very busy time for all of us, both professionally and personally.  I hope that you will join me in pausing for a few moments to reflect on all that is […]</p>
+            
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image_loading">
+            <img src="11.jpg" alt="">
+         </div>
+         <div class="content_loading">
+            <h3>Navigating Challenges and Pitfalls When Leading People – Stephen Sisti, Infinity Worlds, VP of Sales, Food and Consumables (3 min read)</h3>
+            <p>In looking back on my career as I transitioned from an independent contributor to a people leader role, I wish I knew then what I’ve come to learn in the nearly 10 years since that time. I, like many others, fell into the typical traps of being a new people leader and thinking I had […]</p>
+           
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image_loading">
+            <img src="12.jpg" alt="">
+         </div>
+         <div class="content_loading">
+            <h3>How Community Involvement Helps Strengthen Your Team – Tina Winham, Conair HBA, Walmart Leader (3 min read)</h3>
+            <p>Community involvement brings positive and measurable change to the communities in which we operate and to our businesses.  What makes a community? There is no one answer. For some, a community is a closely connected group of people working towards a common goal. For others, it’s the people you enjoy spending time with.  Regardless of […]</p>
+           
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image_loading">
+            <img src="13.jpg" alt="">
+         </div>
+         <div class="content_loading">
+            <h3>Why Empathetic Leadership Matters More Than Ever – Isaac Jamison, Jackie Madsen, John Ozgopoyan, Jason Wood, L’Oréal USA, Sr VPs of Sales, Consumer Products Division (3 min read)</h3>
+            <p>One of the things we talk about all the time at L’Oréal is the power of connection and collaboration and how important they are in sparking innovation and creativity. But connection and collaboration don’t just happen. They require you to build relationships and establish trust, and that requires empathetic leadership. Empathetic leadership can be defined […]</p>
+            
+           
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image_loading">
+            <img src="14.jpg" alt="">
+         </div>
+         <div class="content_loading">
+            <h3>Connecting Intent to Outcome – Jeff Hendrix, Bimbo Bakeries USA, Vice President Customer Teams, Walmart/Sam’s Club (3 min read)</h3>
+            <p>Is there an actual or perceived dichotomy between intent and outcome within our recent history? The past several years has provided much in the way of new data to process, while the next few years require applied learnings on the roads back to normalcy. I have recently been considering what new components we should incorporate […]</p>
+          
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image_loading">
+            <img src="15.jpg" alt="">
+         </div>
+         <div class="content_loading">
+            <h3>Delivering Peak Performance While Battling Your Inner Demons – Kyle Williams, Wells Enterprises – Sales Team Lead, Walmart (3 min read)</h3>
+            <p>How can someone deliver peak performance while batting their inner demons?  The two feel like complete opposites, nevertheless, I want to share my battle strategies on how I have approached the challenge.  For most of my life my inner demons have been depression and anxiety. Battle Helmet: Temet Nosce (Know Thyself) For the Fantasy & […]</p>
+            
+            
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image_loading">
+            <img src="16.jpg" alt="">
+         </div>
+         <div class="content_loading">
+            <h3>A Lifelong Pursuit of Learning and Growing – Jillian Cavness, The Topps Company – Director of Sales, Club and Mass (3 min read)</h3>
+            <p>There’s only 11,316 women in the U.S. that hold Private Pilot certificates. Nearly a decade ago, I decided I was brave (crazy) enough to be one of those women. I tend to seek out challenges – the big scary things that force me to grow much more than is comfortable. Speaking to prospective pilots today […]</p>
+            
+            
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image_loading">
+            <img src="17.jpg" alt="">
+         </div>
+         <div class="content_loading">
+            <h3>The Importance of Trust in a High Performance Team and How to Build It – Todd Rupp, The Clorox Company – Director of Category Leadership (4 min read)</h3>
+            <p>With my military background, I had the pleasure of being a part of some very dynamic teams and nowhere else does teamwork and more importantly, trust, matter more.  In the military, almost every mission requires an enormous amount of teamwork and many times decisions have dire consequences.  Success routinely depended on trusting your own training, […]</p>
+            
+            
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image_loading">
+            <img src="18.jpg" alt="">
+         </div>
+         <div class="content_loading">
+            <h3>Joy for the Journey – Sky Borgerding, Community Coffee – Team Lead, Walmart & Sam’s Club (4 min read)</h3>
+            <p>One of the reasons that I enjoy sports (particularly college football) is because I enjoy watching others achieve joy within their craft. Sure, the excessive self-aggrandizing behavior gets nauseating at times, but by and large I join in with them as they celebrate their successes on the field. I have never met an athlete who […]</p>
+            
+         </div>
+      </div>
+
+
+      <div class="box">
+         <div class="image_loading">
+            <img src="19.jpg" alt="">
+         </div>
+         <div class="content_loading">
+            <h3>The REAL ROI – Unlocking Potential in Others – Kathryn Allison, Harvest Group – EVP Walmart & Sam’s Club Team (3 min read)</h3>
+            <p>A rewarding, fulfilling career path: this simple concept is something that most working individuals desire but many never achieve. Why is that? It might be that defining success is unique to the individual. What satisfies one may dissatisfy another. However, in the CPG/retailer industry, success has traditionally been defined as “climbing the ladder” and “making […]</p>
+            
+         </div>
+      </div>
+
+
+
+      <div class="box">
+         <div class="image_loading">
+            <img src="20.jpg" alt="">
+         </div>
+         <div class="content_loading">
+            <h3>Business Intelligence: From Groundhog Day to Transformation – Kim Viccaro, Johnson & Johnson – Director of Advanced Analytics & Business Intelligence, U.S. (2 min read)</h3>
+            <p>New Role Have you ever taken on a new role only to be shocked at how little the field, capabilities, and function itself has advanced? After 22 years with Johnson & Johnson, I found myself in this situation when I was given the opportunity to run the J&J category management team here in Northwest Arkansas. […]</p>
+            
+         </div>
+      </div>
+
+
+
+      <div class="box">
+         <div class="image_loading">
+            <img src="21.jpg" alt="">
+         </div>
+         <div class="content_loading">
+            <h3>The Practice of Servant Leadership – Russell Williams, Hamilton Beach – Director of Sales, Walmart (3 min read)</h3>
+            <p>The last few years have put unusual stress on professional and personal environments in ways most of us have never experienced. To make it even more challenging, being isolated in our homes and not able to collaborate in traditional ways have left companies and the people who are the heartbeat of those organizations left to […]</p>
+            
+         </div>
+      </div>
+
+
+      <div class="box">
+         <div class="image_loading">
+            <img src="22.jpg" alt="">
+         </div>
+         <div class="content_loading">
+            <h3>Raise the Standard – Dan Arnsperger, Happy Egg – Chief Executive Officer (2 min read)</h3>
+            <p>Values matter.  Values should be the first language taught at your company.  Your values should be as common as any other phrase that you use in your business, not just words on a wall.  Hire for values, fire for values, drive accountability to values, have fun with values. At Happy Egg, our entire purpose is […]</p>
+            
+         </div>
+      </div>
+
+
+      <div class="box">
+         <div class="image_loading">
+            <img src="23.jpg" alt="">
+         </div>
+         <div class="content_loading">
+            <h3>My Top 10 Covid Learnings As A Team Leader – Tom McDonald, Bayer Consumer Health – VP / Team Leader, Walmart and Sam’s (4 min read)</h3>
+            <p>The past 15 months has been the most interesting and difficult part of my work life. The learnings are abundant, yet I’m not sure how to apply them all. My background is 35+ years of CPG experience, including 30 years at P&G, 3 years running the Category Management Association for a PE firm and 2 […]</p>
+            
+         </div>
+      </div>
+
+
+      <div class="box">
+         <div class="image_loading">
+            <img src="24.jpg" alt="">
+         </div>
+         <div class="content_loading">
+            <h3>Finding a High Performance Team to Join – Matthew Maroney, TracFone Wireless – VP of Sales & Marketing, Walmart (3 min read)</h3>
+            <p>A lot has been written on the importance of high performing teams to an organization. Included are characteristics of a high performing team and the process to build high performing teams (my favorite process is Forming, Storming, Norming and Performing).  Also, working on a high performing team is really fun.  The most rewarding times in […]</p>
+            
+         </div>
+      </div>
+
+
+      <div class="box">
+         <div class="image_loading">
+            <img src="25.jpg" alt="">
+         </div>
+         <div class="content_loading">
+            <h3>Vulnerability Isn’t for Me…Or is It? – Lisa Christianson, Unilever – Head of US Category Management (2 min read)</h3>
+            <p>The hardest presentation I have given to date in my career was introducing myself to my current team.  It was only a 30-minute session with a small group live and the balance on a virtual team call.  My new boss and predecessor were going to announce the organization changes. I would have 15 minutes for […]</p>
+            
+         </div>
+      </div>
+
+
+      <div class="box">
+         <div class="image_loading">
+            <img src="26.jpg" alt="">
+         </div>
+         <div class="content_loading">
+            <h3>Connectivity in Transition – Casey Rivard, Ocean Spray Cranberries – Sales Director, Walmart (2 min read)</h3>
+            <p>I recently made a job transition during the COVID-19 pandemic. So many colleagues have asked me about this transition and felt, “it must have been hard during COVID.” But instead, it has been invigorating. Onboarding in a new company is always challenging, made even more so thru COVID.  I focused on three areas that I […]</p>
+            
+         </div>
+      </div>
+      <div class="box">
+         <div class="image_loading">
+            <img src="27.jpg" alt="">
+         </div>
+         <div class="content_loading">
+            <h3>Reflection on My Experiences During the Pandemic – Nick Jolly, StarKist – Director of Sales, Walmart & Sam’s Club (2 min)</h3>
+            <p>It’s been a year.  For me.  For you.  For everybody.  When I look back at events, experiences and what I learned during the pandemic, it’s a little surprising how much change was packed into the last year.  I experienced personal and economic loss, learned new skills, started a business, lost a job and found a […]</p>
+            
+         </div>
+      </div>
+
+   </div>
+
+   <div id="load-more"> load more </div>
+
+</div>
+
+
+
+
+
+
+<footer>
+   <div class="article">
+     <div class="left box">
+       <div class="upper">
+         <div class="topic">About us</div>
+         <p>Our understanding of the jobs in the market ensures you are placed in a position to reach your full potential.</p>
+       </div>
+       <div class="lower">
+         <div class="topic">Contact us</div>
+         <div class="phone">
+           <a href="tel:+4733378901"><i class="fa fa-phone"></i>+007 9898 015</a>
+         </div>
+         <div class="email">
+           <a href="mailto:someone@example.com"><i class="fa fa-envelope"></i>yourgmaailname@gmail.com</a>
+         </div>
+       </div>
+     </div>
+     <div class="middle box">
+       <div class="topic">Our Services</div>
+       <div><a href="profile.php">HOME</a></div>
+       <div><a href="why_stout.html">WHY STOUT</a></div>
+       <div><a href="companies.html">COMPANIES</a></div>
+       <div><a href="candidates.html">CANDIDATES</a></div>
+       <div><a href="testimonials.html">TESTIMONIALS</a></div>
+       <div><a href="vendorviewblog.html">Vendor Views BLOG</a></div>
+       <div><a href="news.html">NEWS</a></div>
+     </div>
+     <div class="right box">
+       <div class="topic">Subscribe us</div>
+       <form action="#" style="width: 90%;">
+         <input type="text" placeholder="Enter Your email address">
+         <input type="submit" name="" value="Send">
+         <div class="media-icons">
+           <a href="https://www.facebook.com/StoutExecutiveSearch/" target="_blank"><i class="fa fa-facebook-f"></i></a>
+           <a href="https://www.instagram.com/StoutSearch/?__coig_restricted=1" target="_blank"><i class="fa fa-instagram"></i></a>
+           <a href="https://twitter.com/stoutsearch" target="_blank"><i class="fa fa-twitter"></i></a>
+           <a href="https://www.linkedin.com/company/2291440" target="_blank"><i class="fa fa-linkedin"></i></a>
+         </div>
+       </form>
+     </div>
+   </div>
+   <div class="bottom">
+     <p>Copyright © 2022 <a href="why_stout.html">WHY STOUT</a> All rights reserved</p>
+   </div>
+ </footer>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $('.toggle i').click(function (){
+    $('ul').toggleClass('show')
+  });
+</script>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+
+<script>
+
+let loadMoreBtn = document.querySelector('#load-more');
+let currentItem = 3;
+
+loadMoreBtn.onclick = () =>{
+   let boxes = [...document.querySelectorAll('.loading .box-loading .box')];
+   for (var i = currentItem; i < currentItem + 3; i++){
+      boxes[i].style.display = 'inline-block';
+   }
+   currentItem += 3;
+
+   if(currentItem >= boxes.length){
+      loadMoreBtn.style.display = 'none';
+   }
+}
+
+</script>
+<script >
+
+ const navToggler = document.querySelector(".nav-toggler");
+ navToggler.addEventListener("click", navToggle);
+
+ function navToggle() {
+    navToggler.classList.toggle("active");
+    const nav = document.querySelector(".nav");
+    nav.classList.toggle("open");
+    if(nav.classList.contains("open")){
+      nav.style.maxHeight = nav.scrollHeight + "px";
+    }
+    else{
+      nav.removeAttribute("style");
+    }
+ } </script>
+</body>
+</html> 

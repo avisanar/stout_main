@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+  <style >
+   :root{
+    --color-1: #2f3240;
+}
+
+*{
+   box-sizing: border-box;
+   margin:0;
+   padding:0;
+}
+ul{
+   list-style: none;
+}
+a{
+   text-decoration: none;
+}
+.header_container{
+   max-width: 1170px;
+   margin:auto;
+}
+.row{
+   display: flex;
+   flex-wrap: wrap;
+}
+.align-items-center{
+   align-items: center;
+}
+.justify-content-between{
+   justify-content: space-between;
+}
+/*header*/
+.header{
+   background-color: #B0E0E6;
+   padding: 12px 0;
+   line-height: 1.5;
+}
+
+.header .header_logo,
+.header .nav{
+   padding:0 15px;
+}
+.header .header_logo a{
+   font-size: 30px;
+   color: #ffffff;
+   text-transform: capitalize;
+}
+.header .nav ul li{
+   display: inline-block;
+   margin-left: 40px;
+}
+.header .nav ul li a{
+   display: block;
+   font-size: 16px;
+   text-transform: capitalize;
+   color: #ffffff;
+   padding: 10px 0;
+   transition: all 0.5s ease;
+}
+.header .nav ul li a.active,
+.header .nav ul li a:hover{
+   color: black;
+}
+.nav-toggler{
+   height: 34px;
+   width: 44px;
+   background-color: #ffffff;
+   border-radius: 4px;
+   cursor: pointer;
+   border:none;
+   display: none;
+   margin-right: 15px;
+}
+.nav-toggler:focus{
+   outline: none;
+   box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+.nav-toggler span{
+    height: 2px;
+    width: 20px;
+    background-color: var(--color-1);
+    display: block;
+    margin:auto;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.nav-toggler.active span{
+   background-color: transparent;
+}
+.nav-toggler span::before,
+.nav-toggler span::after{
+   content: '';
+   position: absolute;
+   left:0;
+   top:0;
+   width: 100%;
+   height: 100%;
+   background-color: var(--color-1);
+   transition: all 0.3s ease;
+}
+.nav-toggler span::before{
+   transform: translateY(-6px);
+}
+.nav-toggler.active span::before{
+   transform: rotate(45deg);
+}
+.nav-toggler span::after{
+   transform: translateY(6px);
+}
+.nav-toggler.active span::after{
+   transform: rotate(135deg);
+}
+@media(max-width:991px){
+   .nav-toggler{
+      display: block;
+   }
+   .header .nav{
+      width: 100%;
+      padding:0;
+      max-height: 0px;
+      overflow: hidden;
+      visibility: hidden;
+      transition: all 0.5s ease;
+   }
+   .header .nav.open{
+      visibility: visible;
+   }
+   .header .nav ul{
+      padding:12px 15px 0;
+      margin-top: 12px;
+      border-top:1px solid rgba(255,255,255,0.2);
+   }
+   .header .nav ul li{
+      display: block;
+      margin:0;
+   }
+}
+
+
+
+  </style>
+
+</head>
+<body>
+  
+  
+
+
+ <header class="header">
+    <div class="header_container">
+        <div class="row align-items-center justify-content-between">
+            <div class="header_logo">
+               <a href="profile.php">logo</a>
+            </div>
+            <button type="button" class="nav-toggler">
+               <span></span>
+            </button>
+            <nav class="nav">
+               <ul>
+                  <li><a href="profile.php" class="active">home</a></li>
+                  <li><a href="why_stout.html">Why stout</a></li>
+                  <li><a href="companies.html">Companies</a></li>
+                  <li><a href="candidates.html">Candidates</a></li>
+                  <li><a href="testimonials.html">Testimonials</a></li>
+                  <li><a href="vendorviewblog.html">Vendor Views Blog</a></li>
+                   <li><a href="news.html">News</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                   <li><a href="index.php">logout</a></li>
+
+  
+  
+               </ul>
+            </nav>
+        </div>
+    </div>
+ </header>
+<div class="top_icon1">
+  <div class="image">
+  <img src="1.jpg" style="margin-left: 60px;">
+</div></div>
+<div class="top_icon">
+  <div class="image">
+  <img src="2.jpg" class="img2"style="margin-left: 10px;">
+  <img src="3.jpg" style="margin-left: 10px;">
+<img src="4.jpg" style="margin-left: 10px;">
+</div></div>
+
+
+
+<div class="image_slide">
+  <img class="mySlides" src="36.jpg"  style="width:100%; height: 300px;">
+  <img class="mySlides" src="34.jpg" style="width:100%; height: 300px;">
+    <img class="mySlides" src="8.jpg" style="width:100%; height: 300px;">
+      <img class="mySlides" src="7.jpg" style="width:100%; height: 300px;">
+
+
+</div></div></nav>
+
+
+<div class="news_para" style="margin-top: 20%;"><a href="contact.html">
+  <h3>
+Workers Seeking New Jobs Should Emulate Candidates
+  </h3></a><br><br>
+  <h4>By Kari Utley – Stout Executive Search
+<br>As printed in:<a href="https://talkbusiness.net/category/regions/northwest-arkansas-region/" target="_blank"><span style="color:red;"><u> Northwest Arkansas Business Journal </u></span></a> 1/1</h4><br><br><br>
+  <p>Finally, it’s an election year.
+
+</p><br>
+  <p>
+What once was a single year encompassing candidates’ declarations to run, fundraising, speeches and votes has now stretched into two years and then some.<br><br>How many live debates, or captured footage on YouTube, or articles including quotes, opinions and plans do we need to see and read before we confidently make up our mind and cast our vote?
+
+<br><br>
+What does it take from each candidate to convince us that he or she is the right choice?
+
+
+
+  </p><br>
+</div>
+<div class="new_para">
+  
+  <p>
+You are looking for a job. Maybe you want to change companies but remain in the same industry. Maybe you want to change industry altogether. In either case, paralleling a political candidate’s race for elected office is a good way to help prepare you to run your own personal campaign for a new job.  </p><br>
+</div><div class="new_para">
+  
+  <p>
+First you must look at your current and former work experience and determine if the time is right for you to pursue a career move. A political candidate completes a self-evaluation that asks the question, “Do I have what it takes to run for this office?”
+
+  </p><br>
+</div>
+<div class="new_para">
+  
+  <p>They already have defined the word “it.” “It” includes confidence, work experience with positive results and support from family. “It” includes the ability to defend their experience and answer the simple question: “Why have you done what you have done?”
+
+</p><br>
+</div>
+<div class="new_para">
+  
+  <p>The political candidates know the direction they want to take the country and they are ready to tell the American people why they should be the next leader. The timing is right and after much self-evaluation, they make their public declarations to run for office.
+
+ </p><br>
+</div>
+
+
+<div class="new_para">
+  
+  <p>After self-evaluation, you declare you want to make a career change. Like a political candidate, you must prepare for the campaign trail. Updating your resume is the first step. Your resume is a tool that introduces you as well as gives the framework of your work history. It acts like your campaign notes.
+
+
+</p><br>
+</div>
+<div class="new_para">
+  
+  <p>
+Be clear and concise. In the first round of skimming through resumes, hiring authorities may spend literally seconds per resume. They look for clean, crisp structure and organized work history. They look for action verbs that describe your performance and success.
+
+  </p><br>
+</div>
+<div class="new_para">
+  
+  <p>
+There are many free resources online offering guidelines as to how to structure a reader-friendly resume. Use them. Have someone read and evaluate your resume. Proofread know your resume inside and out.
+
+<br><br>Give serious thought as to why you chose your career path and be able to defend it.
+
+<br><br>Contact a recruiter in your field letting them know you are entering the campaign trail. Tell them, as if talking with your campaign manager, why you are entering the job market. Know what you want. Sell them on selling you.
+
+<br><br>A good recruiter is going to sit down with you, review your resume and make a plan.
+
+  </p><br>
+</div>
+
+<div class="new_para">
+  
+  <p>They are also going to be forthright and honest, just like a campaign manager, giving you advice on which position best fits you, your personality, your background and your work experience.
+
+ </p><br>
+</div>
+
+<div class="new_para">
+  
+  <p>
+In this strategy meeting, the recruiter takes an objective stance and is able to evaluate your strengths and weaknesses. They may ask questions such as “Why did you leave your previous company? Why do you want to leave your current company? Where do you want to go in your career path?”
+
+  </p><br>
+</div>
+
+<div class="new_para">
+  
+  <p>
+The voter asks the politician, “Why should I vote for you?” The hiring authority asks the applicant, “Why should I hire you?” The politician claims to know what the American people want. Know what you want as well as clarity on the job description and what the prospective company wants.
+
+ </p><br>
+</div>
+<div class="new_para">
+  
+  <p>
+Pre-interview preparation is a must. Use the Internet to familiarize yourself with any available news or information on the company. Have a list of questions that you want answered during the interview. Remember, the company is interviewing you but you also are interviewing the company. </p><br>
+</div>
+
+</div>
+<div class="new_para">
+  
+  <p>Job campaigning can be tough. Competition can be fierce. Be patient and persevere. When you win the election and begin your new job, be committed to follow through on the promises you made during the interview. This may be the only difference between a politician and an employee.
+
+ </p><br>
+</div>
+
+</div>
+<div class="new_para">
+  
+  <p>Kari Utley has 20 years of experience in international business development and is manager of public relations and marketing for Stout Executive Search in Springdale, which focuses on the <a href="https://corporate.walmart.com/" target="_blank"><span style="color:red;"><u> Wal-Mart</u></span></a> supplier community. She may be reached at kari@stoutexecutivesearch.com.
+
+
+
+  </p><br>
+</div>
+</div>
+<div class="new_para">
+  
+  <p>
+Copyright © 2008, Arkansas Business Limited Partnership. All Rights Reserved.
+
+
+  </p><br>
+</div>
+
+<div class="first_but">   
+  <a href="readmore6.html">
+  <button>previous</button></a>
+  <a href="readmore7.html">
+  <button>next</button></a>
+</div>
+
+<br><br><br>
+
+
+
+
+
+
+
+<footer>
+   <div class="article">
+     <div class="left box">
+       <div class="upper">
+         <div class="topic">About us</div>
+         <p>Our understanding of the jobs in the market ensures you are placed in a position to reach your full potential.</p>
+       </div>
+       <div class="lower">
+         <div class="topic">Contact us</div>
+         <div class="phone">
+           <a href="tel:+4733378901"><i class="fa fa-phone"></i>+007 9898 015</a>
+         </div>
+         <div class="email">
+           <a href="mailto:someone@example.com"><i class="fa fa-envelope"></i>yourgmaailname@gmail.com</a>
+         </div>
+       </div>
+     </div>
+     <div class="middle box">
+       <div class="topic">Our Services</div>
+       <div><a href="profile.php">HOME</a></div>
+       <div><a href="why_stout.html">WHY STOUT</a></div>
+       <div><a href="companies.html">COMPANIES</a></div>
+       <div><a href="candidates.html">CANDIDATES</a></div>
+       <div><a href="testimonials.html">TESTIMONIALS</a></div>
+       <div><a href="vendorviewblog.html">Vendor Views BLOG</a></div>
+       <div><a href="news.html">NEWS</a></div>
+     </div>
+     <div class="right box">
+       <div class="topic">Subscribe us</div>
+       <form action="#" style="width: 90%;">
+         <input type="text" placeholder="Enter Your email address">
+         <input type="submit" name="" value="Send">
+        <div class="media-icons">
+           <a href="https://www.facebook.com/StoutExecutiveSearch/" target="_blank"><i class="fa fa-facebook-f"></i></a>
+           <a href="https://www.instagram.com/StoutSearch/?__coig_restricted=1" target="_blank"><i class="fa fa-instagram"></i></a>
+           <a href="https://twitter.com/stoutsearch" target="_blank"><i class="fa fa-twitter"></i></a>
+           <a href="https://www.linkedin.com/company/2291440" target="_blank"><i class="fa fa-linkedin"></i></a>
+         </div>
+       </form>
+     </div>
+   </div>
+   <div class="bottom">
+     <p>Copyright © 2022 <a href="why_stout.html">WHY STOUT</a> All rights reserved</p>
+   </div>
+ </footer>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $('.toggle i').click(function (){
+    $('ul').toggleClass('show')
+  });
+</script>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+<script >
+
+ const navToggler = document.querySelector(".nav-toggler");
+ navToggler.addEventListener("click", navToggle);
+
+ function navToggle() {
+    navToggler.classList.toggle("active");
+    const nav = document.querySelector(".nav");
+    nav.classList.toggle("open");
+    if(nav.classList.contains("open")){
+      nav.style.maxHeight = nav.scrollHeight + "px";
+    }
+    else{
+      nav.removeAttribute("style");
+    }
+ } </script>
+</body>
+</html> 
+
+

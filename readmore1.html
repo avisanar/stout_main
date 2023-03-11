@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+
+  <style >
+   :root{
+    --color-1: #2f3240;
+}
+
+*{
+   box-sizing: border-box;
+   margin:0;
+   padding:0;
+}
+ul{
+   list-style: none;
+}
+a{
+   text-decoration: none;
+}
+.header_container{
+   max-width: 1170px;
+   margin:auto;
+}
+.row{
+   display: flex;
+   flex-wrap: wrap;
+}
+.align-items-center{
+   align-items: center;
+}
+.justify-content-between{
+   justify-content: space-between;
+}
+/*header*/
+.header{
+   background-color: #B0E0E6;
+   padding: 12px 0;
+   line-height: 1.5;
+}
+
+.header .header_logo,
+.header .nav{
+   padding:0 15px;
+}
+.header .header_logo a{
+   font-size: 30px;
+   color: #ffffff;
+   text-transform: capitalize;
+}
+.header .nav ul li{
+   display: inline-block;
+   margin-left: 40px;
+}
+.header .nav ul li a{
+   display: block;
+   font-size: 16px;
+   text-transform: capitalize;
+   color: #ffffff;
+   padding: 10px 0;
+   transition: all 0.5s ease;
+}
+.header .nav ul li a.active,
+.header .nav ul li a:hover{
+   color: black;
+}
+.nav-toggler{
+   height: 34px;
+   width: 44px;
+   background-color: #ffffff;
+   border-radius: 4px;
+   cursor: pointer;
+   border:none;
+   display: none;
+   margin-right: 15px;
+}
+.nav-toggler:focus{
+   outline: none;
+   box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+.nav-toggler span{
+    height: 2px;
+    width: 20px;
+    background-color: var(--color-1);
+    display: block;
+    margin:auto;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.nav-toggler.active span{
+   background-color: transparent;
+}
+.nav-toggler span::before,
+.nav-toggler span::after{
+   content: '';
+   position: absolute;
+   left:0;
+   top:0;
+   width: 100%;
+   height: 100%;
+   background-color: var(--color-1);
+   transition: all 0.3s ease;
+}
+.nav-toggler span::before{
+   transform: translateY(-6px);
+}
+.nav-toggler.active span::before{
+   transform: rotate(45deg);
+}
+.nav-toggler span::after{
+   transform: translateY(6px);
+}
+.nav-toggler.active span::after{
+   transform: rotate(135deg);
+}
+@media(max-width:991px){
+   .nav-toggler{
+      display: block;
+   }
+   .header .nav{
+      width: 100%;
+      padding:0;
+      max-height: 0px;
+      overflow: hidden;
+      visibility: hidden;
+      transition: all 0.5s ease;
+   }
+   .header .nav.open{
+      visibility: visible;
+   }
+   .header .nav ul{
+      padding:12px 15px 0;
+      margin-top: 12px;
+      border-top:1px solid rgba(255,255,255,0.2);
+   }
+   .header .nav ul li{
+      display: block;
+      margin:0;
+   }
+}
+
+
+
+  </style>
+
+</head>
+<body>
+  
+  
+
+
+ <header class="header">
+    <div class="header_container">
+        <div class="row align-items-center justify-content-between">
+            <div class="header_logo">
+               <a href="profile.php">logo</a>
+            </div>
+            <button type="button" class="nav-toggler">
+               <span></span>
+            </button>
+            <nav class="nav">
+               <ul>
+                  <li><a href="profile.php" class="active">home</a></li>
+                  <li><a href="why_stout.html">Why stout</a></li>
+                  <li><a href="companies.html">Companies</a></li>
+                  <li><a href="candidates.html">Candidates</a></li>
+                  <li><a href="testimonials.html">Testimonials</a></li>
+                  <li><a href="vendorviewblog.html">Vendor Views Blog</a></li>
+                   <li><a href="news.html">News</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                   <li><a href="index.php">logout</a></li>
+
+  
+  
+               </ul>
+            </nav>
+        </div>
+    </div>
+ </header>
+<div class="top_icon1">
+  <div class="image">
+  <img src="1.jpg" style="margin-left: 60px;">
+  </div>
+</div>
+<div class="top_icon">
+  <div class="image">
+  <img src="2.jpg" class="img2"style="margin-left: 10px;">
+  <img src="3.jpg" style="margin-left: 10px;">
+  <img src="4.jpg" style="margin-left: 10px;">
+  </div>
+</div>
+
+
+
+<div class="image_slide">
+  <img class="mySlides" src="35.jpg"  style="width:100%; height: 300px;" >
+  <img class="mySlides" src="36.jpg" style="width:100%; height: 300px;">
+  <img class="mySlides" src="8.jpg" style="width:100%; height: 300px;">
+    <img class="mySlides" src="7.jpg" style="width:100%; height: 300px;">
+
+</div>
+<br><br><br>
+
+<div class="news_para"><a href="companies">
+  <h3>
+    How Important is Company Culture?
+  </h3></a><br><br>
+  <h4>by Marvelyn Stout  3/17</h4><br><br><br>
+  <p>Culture is everything.</p><br>
+  <p>
+    Culture should be a fundamental consideration when making a career change. If you don't put yourself in an environment where you will thrive, neither you nor your company will grow to its fullest potential. Having the right skill set is the cost of entry, very important and necessary, but fitting into the company's culture is the critical driver of success.
+  </p><br>
+</div>
+<div class="new_para">
+  
+  <p>
+    A company's culture is defined by its shared attitudes, values, goals, and practices. It is important to know the culture in which you best perform. When you are considering change, do your research. Visit the company's website. What does it tell you about their ethics, principles and values? Visit their social media platforms. What do they say about the company you are considering? Talk with your recruiter to find out all they know about the company. When possible, talk with current or previous team members of the company you are considering.
+  </p><br>
+</div><div class="new_para">
+  
+  <p>
+  Here at <a href="profile.php"> <span style="color:red;"><u>Stout Executive Search</u></span></a>, we recruit exclusively for the Walmart Supplier teams in Northwest Arkansas, so our emphasis is on what it takes to succeed uniquely in this market. When it comes to company culture, the same basic criteria apply. It's easy to say that suppliers spend at least 50+ hours a week at work. Depending on the role, much of that can be travel outside of the office, and many times with other team members. All the more reason to understand the importance of culture fit.
+  </p><br>
+</div>
+<div class="new_para">
+  
+  <p>
+As long as a variety of people make up teams, there will be a variety of company cultures. This is why before we recruit for a company, we go and visit the local team leader to better understand their culture. And before we present a candidate, we always meet with them in person in our office. Stout believes those sessions are essential to insuring a good fit for both the company and the candidate. Today, more than ever, we've seen an emphasis on the importance of placing candidates who are a culture fit.
+  </p><br>
+</div>
+
+
+<div class="new_paras"><a href="why_stout">
+  <h3>A Few Attributes to Consider:</h3></a>
+  
+  <ol>
+    <li>
+     <b> Leadership Style.</b> The spectrum of leadership can range from traditional to progressive. With traditional leadership, the leader is largely tied to tradition and custom, exercising power from the top of the pyramid down, with a mantra of "we've always done it this way." Progressive leaders who challenge the status quo, are typically risk takers, and may be flexible on work location, hours and method. Servant leadership is another style we've seen where the leader focuses primarily on the growth, development and well-being of the individuals on their team. What leadership style has brought forth your best work and efforts? What are the characteristics of the best boss you've ever had? You may be versatile and adaptable to different leadership styles but there is usually one style where you thrive.
+    </li>
+    <li>
+      <b>Office Space.</b> In recent years, open floor plans have become the latest craze inside supplier offices. Envision an office space with everyone out in the open, no walls, and no dividers. This layout is meant to encourage more collaboration, but there are drawbacks. Some of the potential issues include noise, interruptions, and distractions. While we know there are complaints coming out of this environment, there are still individuals who have adapted and even prefer an open floor plan over the closed off individual office space. What is the optimum office environment for your best performance? Open space, individual office, or cubicle?
+    </li>
+    <li>
+     <b> Attitude towards "Team."</b> Team dynamics are another major factor in determining whether there is a culture fit. Does the team spend time together outside of the office? Are they a close-knit team? What is the company/leader's policy towards progression and development both individually and as a team? Is there a mentoring program inside the company? What does it mean to this company, especially on the local level, to be considered a "team player?" A team motto of "work hard, play hard" may be exciting to some, while for others it may be draining and not provide the same motivation.
+    </li>
+    <li>
+      <b>Community involvement.</b> Northwest Arkansas is fortunate to benefit from the presence of a large number of Walmart supplier companies. Is the company you are interested in involved in a local charity? Do they offer matching donations? Does the company encourage volunteering and/or mentoring as an outreach to the community?
+    </li>
+    
+  </ol>
+  <p>These are all important questions to ask yourself about your target company's culture when considering a career change.</p>
+  <p>At <a href="profile.php"> <span style="color:red;"><u>Stout Executive Search</u></span></a>, culture fit is our number one priority, and it should be yours too.</p><br>
+  <img src="29.jpg" style="width:100px; height:200px;"><br>
+  <p>Marvelyn Stout is the Founder and President of one of the fastest growing, elite recruiting businesses in Northwest Arkansas. For the last decade, Stout Executive Search has specialized in placing professionals for Walmart supplier teams. For more information, contact us at our office 479.361.1114 or visit our website at <a href="profile.php"> <span style="color:red;"><u> www.stoutexecutivesearch.com.</u></span></a></p><br><br><br><br><br>
+<div class="first_but"> <a href="news.html">
+  <button>previous</button></a>
+  <a href="readmore2.html">
+  <button>next</button></a>
+</div>
+</div>
+
+
+
+
+<br><br>
+
+
+<footer>
+   <div class="article">
+     <div class="left box">
+       <div class="upper">
+         <div class="topic">About us</div>
+         <p>Our understanding of the jobs in the market ensures you are placed in a position to reach your full potential.</p>
+       </div>
+       <div class="lower">
+         <div class="topic">Contact us</div>
+         <div class="phone">
+           <a href="tel:+4733378901"><i class="fa fa-phone"></i>+007 9898 015</a>
+         </div>
+         <div class="email">
+           <a href="mailto:someone@example.com"><i class="fa fa-envelope"></i>yourgmaailname@gmail.com</a>
+         </div>
+       </div>
+     </div>
+     <div class="middle box">
+       <div class="topic">Our Services</div>
+       <div><a href="profile.php">HOME</a></div>
+       <div><a href="why_stout.html">WHY STOUT</a></div>
+       <div><a href="companies.html">COMPANIES</a></div>
+       <div><a href="candidates.html">CANDIDATES</a></div>
+       <div><a href="testimonials.html">TESTIMONIALS</a></div>
+       <div><a href="vendorviewblog.html">Vendor Views BLOG</a></div>
+       <div><a href="news.html">NEWS</a></div>
+     </div>
+     <div class="right box">
+       <div class="topic">Subscribe us</div>
+       <form action="#" style="width: 90%;">
+         <input type="text" placeholder="Enter Your email address">
+         <input type="submit" name="" value="Send">
+        <div class="media-icons">
+           <a href="https://www.facebook.com/StoutExecutiveSearch/" target="_blank"><i class="fa fa-facebook-f"></i></a>
+           <a href="https://www.instagram.com/StoutSearch/?__coig_restricted=1" target="_blank"><i class="fa fa-instagram"></i></a>
+           <a href="https://twitter.com/stoutsearch" target="_blank"><i class="fa fa-twitter"></i></a>
+           <a href="https://www.linkedin.com/company/2291440" target="_blank"><i class="fa fa-linkedin"></i></a>
+         </div>
+       </form>
+     </div>
+   </div>
+   <div class="bottom">
+     <p>Copyright © 2022 <a href="why_stout.html">WHY STOUT</a> All rights reserved</p>
+   </div>
+ </footer>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $('.toggle i').click(function (){
+    $('ul').toggleClass('show')
+  });
+</script>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+<script >
+
+ const navToggler = document.querySelector(".nav-toggler");
+ navToggler.addEventListener("click", navToggle);
+
+ function navToggle() {
+    navToggler.classList.toggle("active");
+    const nav = document.querySelector(".nav");
+    nav.classList.toggle("open");
+    if(nav.classList.contains("open")){
+      nav.style.maxHeight = nav.scrollHeight + "px";
+    }
+    else{
+      nav.removeAttribute("style");
+    }
+ } </script>
+</body>
+</html> 
+
+

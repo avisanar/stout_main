@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+
+
+  <style >
+   :root{
+    --color-1: #2f3240;
+}
+
+*{
+   box-sizing: border-box;
+   margin:0;
+   padding:0;
+}
+ul{
+   list-style: none;
+}
+a{
+   text-decoration: none;
+}
+.header_container{
+   max-width: 1170px;
+   margin:auto;
+}
+.row{
+   display: flex;
+   flex-wrap: wrap;
+}
+.align-items-center{
+   align-items: center;
+}
+.justify-content-between{
+   justify-content: space-between;
+}
+/*header*/
+.header{
+   background-color: #B0E0E6;
+   padding: 12px 0;
+   line-height: 1.5;
+}
+
+.header .header_logo,
+.header .nav{
+   padding:0 15px;
+}
+.header .header_logo a{
+   font-size: 30px;
+   color: #ffffff;
+   text-transform: capitalize;
+}
+.header .nav ul li{
+   display: inline-block;
+   margin-left: 40px;
+}
+.header .nav ul li a{
+   display: block;
+   font-size: 16px;
+   text-transform: capitalize;
+   color: #ffffff;
+   padding: 10px 0;
+   transition: all 0.5s ease;
+}
+.header .nav ul li a.active,
+.header .nav ul li a:hover{
+   color: black;
+}
+.nav-toggler{
+   height: 34px;
+   width: 44px;
+   background-color: #ffffff;
+   border-radius: 4px;
+   cursor: pointer;
+   border:none;
+   display: none;
+   margin-right: 15px;
+}
+.nav-toggler:focus{
+   outline: none;
+   box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+.nav-toggler span{
+    height: 2px;
+    width: 20px;
+    background-color: var(--color-1);
+    display: block;
+    margin:auto;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.nav-toggler.active span{
+   background-color: transparent;
+}
+.nav-toggler span::before,
+.nav-toggler span::after{
+   content: '';
+   position: absolute;
+   left:0;
+   top:0;
+   width: 100%;
+   height: 100%;
+   background-color: var(--color-1);
+   transition: all 0.3s ease;
+}
+.nav-toggler span::before{
+   transform: translateY(-6px);
+}
+.nav-toggler.active span::before{
+   transform: rotate(45deg);
+}
+.nav-toggler span::after{
+   transform: translateY(6px);
+}
+.nav-toggler.active span::after{
+   transform: rotate(135deg);
+}
+@media(max-width:991px){
+   .nav-toggler{
+      display: block;
+   }
+   .header .nav{
+      width: 100%;
+      padding:0;
+      max-height: 0px;
+      overflow: hidden;
+      visibility: hidden;
+      transition: all 0.5s ease;
+   }
+   .header .nav.open{
+      visibility: visible;
+   }
+   .header .nav ul{
+      padding:12px 15px 0;
+      margin-top: 12px;
+      border-top:1px solid rgba(255,255,255,0.2);
+   }
+   .header .nav ul li{
+      display: block;
+      margin:0;
+   }
+}
+
+
+
+  </style>
+
+</head>
+<body>
+  
+  
+
+
+ <header class="header">
+    <div class="header_container">
+        <div class="row align-items-center justify-content-between">
+            <div class="header_logo">
+               <a href="profile.php">logo</a>
+            </div>
+            <button type="button" class="nav-toggler">
+               <span></span>
+            </button>
+            <nav class="nav">
+               <ul>
+                  <li><a href="profile.php" class="active">home</a></li>
+                  <li><a href="why_stout.html">Why stout</a></li>
+                  <li><a href="companies.html">Companies</a></li>
+                  <li><a href="candidates.html">Candidates</a></li>
+                  <li><a href="testimonials.html">Testimonials</a></li>
+                  <li><a href="vendorviewblog.html">Vendor Views Blog</a></li>
+                   <li><a href="news.html">News</a></li>
+                   <li><a href="contact.html">Contact</a></li>                   
+                   <li><a href="index.php">logout</a></li>
+
+
+  
+  
+               </ul>
+            </nav>
+        </div>
+    </div>
+ </header>
+<div class="top_icon1">
+  <div class="image">
+  <img src="1.jpg" style="margin-left: 60px;">
+</div></div>
+<div class="top_icon">
+  <div class="image">
+  <img src="2.jpg" class="img2"style="margin-left: 10px;">
+  <img src="3.jpg" style="margin-left: 10px;">
+<img src="4.jpg" style="margin-left: 10px;">
+</div></div>
+
+
+
+<div class="image_slide">
+  <img class="mySlides" src="36.jpg"  style="width:100%; height: 300px;">
+  <img class="mySlides" src="34.jpg" style="width:100%; height: 300px;">
+    <img class="mySlides" src="8.jpg" style="width:100%; height: 300px;">
+      <img class="mySlides" src="7.jpg" style="width:100%; height: 300px;">
+
+
+</div></div></nav>
+
+<div class="news_para"><a href="why_stout.html">
+  <h3>
+    Stout Executive Search Has Gone Green
+  </h3></a><br><br>
+  <h4>By: Bianca Ramsey – 2/17</h4><br><br><br>
+  <p>Culture is everything.</p><br>
+  <p>
+    Marvelyn Stout took the challenge to become a leader in sustainability by choosing lighting designer Derry Berrigan to create a high quality sustainable lighting solution for Stout Executive Search’s new office in HarBer Meadows Business Park in Springdale, Arkansas. This installation is one of the first of its kind in Arkansas to demonstrate how LED solutions are a viable general lighting option for office applications.By adopting this forward thinking approach Stout can now enjoy the benefits of excellent light quality and energy savings as well as taking steps to help mitigate negative environmental impacts.
+  </p><br>
+</div>
+<div class="new_para">
+  
+  <p>
+   A sustainable lighting solution complements Stout’s personal and corporate commitment to the environment. The choice of LED lighting will help reduce future overheads both in terms of electricity consumption and maintenance costs while maintaining a high quality of lighting for her clients, candidates and the Stout team.
+  </p><br>
+</div><div class="new_para">
+  
+  <p>
+In terms of energy reduction the savings speak for themselves. The Stout office is highly efficient using only 574 Watts for the entire lighting system. The new design is 53% better than ASHRAE 90.1 2007 (Energy Standard for Buildings) and 78% energy reduction from the previous existing lighting solution. This reduction in energy consumption is significant given that 40% of the electricity typically used in offices is for lighting.
+  </p><br>
+</div>
+<div class="new_para">
+  
+  <p>
+The Stout Executive Search office features new 12 Watt LED lamps designed to last 50,000 hours. General ambient light is supplemented with personal lighting systems used by each employee that allow for flexibility based on personal lighting preferences and employs an occupancy sensor to further capture energy savings.  </p><br>
+</div>
+<div class="new_para">
+  
+  <p>
+Given the fact that one kilowatt-hour of electricity will cause 1.34 pounds (610 g) of CO2 emission and assuming the average light bulb is on for 10 hours a day, one 40-watt incandescent bulb will cause 196 pounds (89 kg) of CO2 emission per year. A 12-watt LED equivalent will only cause 61 pounds (29 kg) of CO2 over the same time span. A building’s carbon footprint from lighting can be reduced by 68% by exchanging all incandescent bulbs for new LEDs.  </p><br>
+</div>
+
+
+<div class="new_para">
+  
+  <p>
+Certainly, <a href="profile.php"> <span style="color:red;"><u>Stout Executive Search</u></span></a> has broken new ground in the early adoption of this revolutionary technology.
+</p><br>
+</div>
+<div class="new_para">
+  
+  <p>
+Bianca Ramsey is the CEO of DBPower of Three Lighting Company, New York, New York
+
+  </p><br>
+</div>
+
+<div class="first_but">   
+  <a href="readmore1.html">
+  <button>previous</button></a>
+  <a href="readmore3.html">
+  <button>next</button></a>
+</div>
+
+
+
+
+<br><br>
+
+
+
+
+<footer>
+   <div class="article">
+     <div class="left box">
+       <div class="upper">
+         <div class="topic">About us</div>
+         <p>Our understanding of the jobs in the market ensures you are placed in a position to reach your full potential.</p>
+       </div>
+       <div class="lower">
+         <div class="topic">Contact us</div>
+         <div class="phone">
+           <a href="tel:+4733378901"><i class="fa fa-phone"></i>+007 9898 015</a>
+         </div>
+         <div class="email">
+           <a href="mailto:someone@example.com"><i class="fa fa-envelope"></i>yourgmaailname@gmail.com</a>
+         </div>
+       </div>
+     </div>
+     <div class="middle box">
+       <div class="topic">Our Services</div>
+       <div><a href="profile.php">HOME</a></div>
+       <div><a href="why_stout.html">WHY STOUT</a></div>
+       <div><a href="companies.html">COMPANIES</a></div>
+       <div><a href="candidates.html">CANDIDATES</a></div>
+       <div><a href="testimonials.html">TESTIMONIALS</a></div>
+       <div><a href="vendorviewblog.html">Vendor Views BLOG</a></div>
+       <div><a href="news.html">NEWS</a></div>
+     </div>
+     <div class="right box">
+       <div class="topic">Subscribe us</div>
+       <form action="#" style="width: 90%;">
+         <input type="text" placeholder="Enter Your email address">
+         <input type="submit" name="" value="Send">
+         <div class="media-icons">
+           <a href="https://www.facebook.com/StoutExecutiveSearch/" target="_blank"><i class="fa fa-facebook-f"></i></a>
+           <a href="https://www.instagram.com/StoutSearch/?__coig_restricted=1" target="_blank"><i class="fa fa-instagram"></i></a>
+           <a href="https://twitter.com/stoutsearch" target="_blank"><i class="fa fa-twitter"></i></a>
+           <a href="https://www.linkedin.com/company/2291440" target="_blank"><i class="fa fa-linkedin"></i></a>
+         </div>
+       </form>
+     </div>
+   </div>
+   <div class="bottom">
+     <p>Copyright © 2022 <a href="why_stout.html">WHY STOUT</a> All rights reserved</p>
+   </div>
+ </footer>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $('.toggle i').click(function (){
+    $('ul').toggleClass('show')
+  });
+</script>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+<script >
+
+ const navToggler = document.querySelector(".nav-toggler");
+ navToggler.addEventListener("click", navToggle);
+
+ function navToggle() {
+    navToggler.classList.toggle("active");
+    const nav = document.querySelector(".nav");
+    nav.classList.toggle("open");
+    if(nav.classList.contains("open")){
+      nav.style.maxHeight = nav.scrollHeight + "px";
+    }
+    else{
+      nav.removeAttribute("style");
+    }
+ } </script>
+</body>
+</html> 
+
+
